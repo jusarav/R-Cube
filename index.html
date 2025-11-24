@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>R³ IT | Enterprise IT Consulting & Managed Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="R³ IT provides enterprise-grade IT consulting, cloud & Azure, automation, and managed services for clinics, labs, and modern offices." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="nav">
+    <div class="nav-inner container">
+      <div class="brand">
+        <div class="brand-mark">R³</div>
+        <div class="brand-text">
+          <span class="brand-name">Rcube IT</span>
+          <span class="brand-tagline">Enterprise IT Consulting</span>
+        </div>
+      </div>
+      <nav class="nav-links" id="nav-links">
+        <a href="#services">Services</a>
+        <a href="#devices">Devices</a>
+        <a href="#amc">AMC</a>
+        <a href="#brands">Brands</a>
+        <a href="#cloud">Cloud & Azure</a>
+        <a href="#automation">Automation</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="btn btn-nav">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <div class="hero-overlay"></div>
+    <div class="hero-inner container">
+      <div class="hero-copy">
+        <h1>Calm, Reliable IT for <span class="accent">Clinics, Labs & Offices</span></h1>
+        <p>
+          We design, deploy and manage your entire IT stack — devices, cloud, security and automation —
+          so your team can focus on patients, reports and business growth.
+        </p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">Book a 20‑min consult</a>
+          <a href="#services" class="btn btn-ghost">View services</a>
+        </div>
+        <div class="hero-metas">
+          <span>✔ Azure & Microsoft 365</span>
+          <span>✔ Managed IT & Helpdesk</span>
+          <span>✔ Workflow Automation</span>
+        </div>
+      </div>
+      <div class="hero-side">
+        <div class="hero-card">
+          <p class="hero-card-label">Snapshot</p>
+          <ul>
+            <li><strong>7+ years</strong> IT support & system admin</li>
+            <li>Specialised in <strong>Azure, M365, VPN & security hardening</strong></li>
+            <li>Field experience with <strong>labs & healthcare</strong> workflows</li>
+          </ul>
+        </div>
+        <div class="hero-stat-grid">
+          <div class="stat">
+            <span class="stat-value">99%</span>
+            <span class="stat-label">Incident resolution</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">&lt;4h</span>
+            <span class="stat-label">Average response</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">24×7</span>
+            <span class="stat-label">Monitoring (add‑on)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Services Strip -->
+  <section class="pillars">
+    <div class="container pillars-inner">
+      <div class="pillars-title">
+        <h2>What we manage for you</h2>
+        <p>Single partner for end‑to‑end IT — from laptop boot issue to Azure architecture.</p>
+      </div>
+      <div class="pillars-grid">
+        <div class="pill">
+          <h3>Cloud & Azure</h3>
+          <p>Design VNETs, VPN, backups, DR, security baseline and cost optimisation.</p>
+        </div>
+        <div class="pill">
+          <h3>Automation</h3>
+          <p>Power Automate, Power Apps & n8n for approvals, onboarding and reporting.</p>
+        </div>
+        <div class="pill">
+          <h3>Managed IT</h3>
+          <p>Endpoint management, patching, AV, helpdesk and IT asset management.</p>
+        </div>
+        <div class="pill">
+          <h3>Laptop & Desktop</h3>
+          <p>Diagnostics, upgrades, OS deployment and performance tuning.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services with graphic -->
+  <section class="section" id="services">
+    <div class="container split">
+      <div class="split-copy">
+        <h2>Service catalog designed for small & mid‑size teams</h2>
+        <p>
+          Whether you run a diagnostic lab, clinic, startup or branch office,
+          our services are structured into clear building blocks so you can start small and scale.
+        </p>
+        <div class="service-list">
+          <div class="service-item">
+            <h3>Device care</h3>
+            <p>SSD/RAM upgrades, OS reinstall, data migration, security hardening, and device imaging for new hires.</p>
+          </div>
+          <div class="service-item">
+            <h3>Network & security</h3>
+            <p>Firewall & router setup, VLANs, secure Wi‑Fi, site‑to‑site VPN and Azure AD integration.</p>
+          </div>
+          <div class="service-item">
+            <h3>Service desk</h3>
+            <p>Ticket‑based support with SLAs, remote & onsite visits, and root‑cause analysis for recurring issues.</p>
+          </div>
+        </div>
+      </div>
+      <div class="split-media">
+        <img src="assets/services-grid.png" alt="Illustration of R³ IT services: cloud, automation, managed IT and support" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Cloud & Azure -->
+  <section class="section section-dark" id="cloud">
+    <div class="container split">
+      <div class="split-copy">
+        <h2>Azure & cloud you can actually understand</h2>
+        <p>
+          We treat cloud like an office you rent: predictable, secure and documented.
+          From first subscription to complex hybrid networks, we keep everything under control.
+        </p>
+        <ul class="bullet-grid">
+          <li>Tenant and subscription design, RBAC & policy</li>
+          <li>VM sizing, backup, and DR runbooks</li>
+          <li>Secure remote access for staff, doctors & field users</li>
+          <li>Microsoft 365, Exchange Online and Teams governance</li>
+        </ul>
+      </div>
+      <div class="split-media hero-shot">
+        <img src="assets/hero-enterprise-it.png" alt="Enterprise IT consulting team working in a secure operations center" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Automation -->
+  <section class="section" id="automation">
+    <div class="container">
+      <div class="section-header">
+        <h2>Automation that quietly kills manual work</h2>
+        <p>Start with 1–2 flows that save your team hours every week.</p>
+      </div>
+      <div class="cards-grid">
+        <article class="card">
+          <h3>Onboarding & offboarding</h3>
+          <p>Create users, assign licences, add to groups, send welcome email and track assets — all from one request.</p>
+        </article>
+        <article class="card">
+          <h3>Approvals & escalation</h3>
+          <p>Leave, gate pass, purchase & IT approvals with clear routing, reminders and Teams notifications.</p>
+        </article>
+        <article class="card">
+          <h3>Reports & alerts</h3>
+          <p>Daily/weekly snapshots of devices, tickets, backups and lab machines pushed to email or Teams.</p>
+        </article>
+        <article class="card">
+          <h3>Open‑source workflows</h3>
+          <p>Use n8n to connect SaaS tools, webhooks and APIs without adding expensive licences.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <h2>Smooth 3‑step engagement</h2>
+      </div>
+      <ol class="process">
+        <li>
+          <h3>1. Discovery & health check</h3>
+          <p>We map your current IT — devices, users, apps, network, cloud — and highlight quick wins & risks.</p>
+        </li>
+        <li>
+          <h3>2. Stabilise & secure</h3>
+          <p>Patch, harden and document. Fix the “daily pain” issues first so your team feels an immediate difference.</p>
+        </li>
+        <li>
+          <h3>3. Automate & optimise</h3>
+          <p>Add automation, monitoring and DR so IT becomes proactive instead of firefighting.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2>Simple, transparent pricing</h2>
+        <p>Exact commercials depend on device count, locations and scope — but this is how we think about plans.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="price-card">
+          <h3>Starter</h3>
+          <p class="price-note">Best for clinics & small labs</p>
+          <ul>
+            <li>Up to 15 devices</li>
+            <li>Remote support during business hours</li>
+            <li>Basic Azure & M365 admin</li>
+            <li>Monthly health‑check report</li>
+          </ul>
+        </div>
+        <div class="price-card price-highlight">
+          <h3>Growth</h3>
+          <p class="price-note">Branch offices & growing teams</p>
+          <ul>
+            <li>Up to 40 devices</li>
+            <li>Remote + scheduled onsite visits</li>
+            <li>Structured onboarding & offboarding flows</li>
+            <li>Monitoring for key servers & services</li>
+          </ul>
+        </div>
+        <div class="price-card">
+          <h3>Custom</h3>
+          <p class="price-note">Multi‑site or specialised setups</p>
+          <ul>
+            <li>Advanced Azure networking & security</li>
+            <li>Hybrid AD, VPN & third‑party integrations</li>
+            <li>Automation projects & dev environments</li>
+            <li>Dedicated success cadence</li>
+          </ul>
+        </div>
+      </div>
+      <p class="pricing-footnote">
+        Share your device count and current stack, and we’ll revert with a detailed proposal and commercials.
+      </p>
+    </div>
+  </section>
+
+  
+  <!-- Devices (Laptop & Desktop Service) -->
+  <section class="section" id="devices">
+    <div class="container">
+      <div class="section-header">
+        <h2>Laptop &amp; Desktop service that feels like in-house IT</h2>
+        <p>Structured service menu so you always know what is covered and how long it will take.</p>
+      </div>
+      <div class="cards-grid">
+        <article class="card">
+          <h3>Performance refresh</h3>
+          <p>SSD + RAM upgrades, OS cleanup, driver updates and security hardening for ageing systems.</p>
+        </article>
+        <article class="card">
+          <h3>OS &amp; app deployment</h3>
+          <p>Clean OS install, essential apps, browser hardening and user profile migration.</p>
+        </article>
+        <article class="card">
+          <h3>Diagnostics &amp; repair</h3>
+          <p>Boot issues, BSOD, heating, slow network, printer problems and basic hardware replacement.</p>
+        </article>
+        <article class="card">
+          <h3>New-joiner kits</h3>
+          <p>Standardised laptop builds, asset tagging and handover checklist for every new employee.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- AMC Section -->
+  <section class="section section-dark" id="amc">
+    <div class="container">
+      <div class="section-header">
+        <h2>Annual Maintenance Contracts (AMC)</h2>
+        <p>Predictable IT support for clinics, labs and offices with clear coverage and SLAs.</p>
+      </div>
+      <div class="pricing-grid amc-grid">
+        <div class="price-card">
+          <h3>Devices-only AMC</h3>
+          <p class="price-note">Keep all endpoints healthy</p>
+          <ul>
+            <li>Quarterly preventive maintenance visits</li>
+            <li>OS &amp; security updates, basic cleanup</li>
+            <li>Priority remote support for incidents</li>
+            <li>Asset &amp; health summary every quarter</li>
+          </ul>
+        </div>
+        <div class="price-card price-highlight">
+          <h3>IT Infrastructure AMC</h3>
+          <p class="price-note">Devices + network + servers</p>
+          <ul>
+            <li>Includes Devices-only AMC benefits</li>
+            <li>Network, printer and server upkeep</li>
+            <li>Backup &amp; DR checks, alert review</li>
+            <li>Monthly IT review call with action items</li>
+          </ul>
+        </div>
+        <div class="price-card">
+          <h3>Custom AMC</h3>
+          <p class="price-note">Multi-site, labs &amp; specialised setups</p>
+          <ul>
+            <li>Coverage for lab machines &amp; interfaces (scope-based)</li>
+            <li>Extended hours or 24×7 on-call options</li>
+            <li>Automation &amp; cloud workloads included</li>
+            <li>Dedicated documentation &amp; change log</li>
+          </ul>
+        </div>
+      </div>
+      <p class="pricing-footnote">
+        Share your device count, locations and key applications to receive a tailored AMC proposal.
+      </p>
+    </div>
+  </section>
+
+  <!-- Brands we support -->
+  <section class="section" id="brands">
+    <div class="container">
+      <div class="section-header">
+        <h2>Brands &amp; platforms we work with</h2>
+        <p>We are comfortable working across a wide range of OEMs and cloud platforms used in modern offices and labs.</p>
+      </div>
+      <div class="brands-wrap">
+        <img src="assets/brands-we-support.png" alt="Logos of major brands supported by Rcube IT including Microsoft, Azure, 365, Dell, HP, Lenovo, Cisco and more" loading="lazy" class="brands-img" />
+      </div>
+    </div>
+  </section>
+
+
+<!-- About -->
+  <section class="section section-dark" id="about">
+    <div class="container split">
+      <div class="split-copy">
+        <h2>Why work with R³ IT?</h2>
+        <p>
+          We sit in the middle of two worlds: deep hands‑on IT support, and practical consulting for small & mid‑size businesses.
+        </p>
+        <ul class="bullet-grid">
+          <li>Real‑world experience as Sr. IT Support & SysAdmin</li>
+          <li>Focus on India‑based businesses with global standards</li>
+          <li>Comfortable working with healthcare, labs and compliance needs</li>
+          <li>Documented setups so you are never locked to one person</li>
+        </ul>
+      </div>
+      <div class="split-media">
+        <div class="about-card">
+          <p>“Our goal is simple: <strong>no drama IT</strong>. Systems just work, tickets are clear, and every change is documented.”</p>
+          <span class="about-name">Saravana Kumar</span>
+          <span class="about-role">Founder, Rcube IT</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container contact-grid">
+      <div>
+        <h2>Let’s map your IT in 20 minutes</h2>
+        <p>
+          Send a quick snapshot of your environment (users, branches, apps) and we’ll come back with
+          a suggested roadmap and estimated commercials.
+        </p>
+        <ul class="contact-list">
+          <li><strong>Email:</strong> info@rcubeit.in (example)</li>
+          <li><strong>Phone / WhatsApp:</strong> +91‑90000‑00000 (example)</li>
+          <li><strong>Location:</strong> Chennai · Remote across India</li>
+        </ul>
+      </div>
+      <form class="contact-form">
+        <div class="form-row">
+          <label for="name">Name*</label>
+          <input id="name" type="text" placeholder="Your name" required />
+        </div>
+        <div class="form-row">
+          <label for="email">Work email*</label>
+          <input id="email" type="email" placeholder="you@company.com" required />
+        </div>
+        <div class="form-row">
+          <label for="company">Company / Lab name</label>
+          <input id="company" type="text" placeholder="Company / Lab" />
+        </div>
+        <div class="form-row form-row-inline">
+          <div>
+            <label for="devices">Approx. devices</label>
+            <input id="devices" type="number" min="1" placeholder="25" />
+          </div>
+          <div>
+            <label for="city">City</label>
+            <input id="city" type="text" placeholder="Chennai" />
+          </div>
+        </div>
+        <div class="form-row">
+          <label for="message">What do you need help with?</label>
+          <textarea id="message" rows="4" placeholder="Example: Move on‑prem server to Azure, set up VPN and automate onboarding."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" onclick="return false;">Submit (static demo)</button>
+        <p class="form-note">Form is static on GitHub Pages — wire it to your ticketing tool or email service when ready.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© 2025 Rcube IT (R³ IT). All rights reserved.</span>
+      <span>Cloud · Security · Automation · Managed IT</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
