@@ -1,1 +1,0 @@
-const canvas=document.getElementById('hero-canvas'); /* three.js code omitted for brevity in this build */
