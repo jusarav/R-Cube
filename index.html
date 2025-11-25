@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>R-Cube IT</title>
+<link rel="icon" href="assets/branding/favicon-32.png" sizes="32x32">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.v3.css">
+</head>
+<body>
+<header class="header">
+  <div class="container header-inner">
+    <a class="brand" href="#top">
+      <img id="brand-logo" src="assets/branding/logo-light.png" class="logo" alt="R-Cube IT logo">
+      <div class="brand-text">
+        <span class="brand-title">R³ IT</span>
+        <span class="brand-sub">R-Cube IT Solutions</span>
+        <span class="tag-small">Repair · Restore · Reliability</span>
+      </div>
+    </a>
+    <nav class="nav">
+      <a href="#services">Services</a>
+      <a href="#whyus">Why Us</a>
+      <a href="#brands">Brands</a>
+      <a href="#amc">AMC</a>
+      <a href="#contact" class="cta">Contact</a>
+    </nav>
+    <div class="theme-toggle"><button id="themeBtn">Dark</button></div>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="top">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">We keep your infrastructure fast, secure & always-on.</p>
+      <h1>Fast laptop fixes. Reliable IT & smart automation.</h1>
+      <p class="lead">Laptop & Desktop service • Cloud & Azure • Automation • Managed IT (AMC)</p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn primary">Get a free audit</a>
+        <a href="#services" class="btn ghost">See services</a>
+      </div>
+      <ul class="highlights">
+        <li>10+ years of hands-on IT & device experience</li>
+        <li>Laptop specialist — repairs, upgrades, tuning</li>
+        <li>Cloud, Azure & automation expertise</li>
+      </ul>
+    </div>
+    <div class="hero-visual" id="threejs-hero">
+      <canvas id="hero-canvas"></canvas>
+    </div>
+  </div>
+</section>
+
+<section id="whyus" class="section alt">
+  <div class="container">
+    <h2>Why Choose Us</h2>
+    <p class="muted">Trusted by clinics, labs & businesses for reliable IT and device support.</p>
+    <div class="why-grid">
+      <div class="why-card"><div class="icon-bounce">⚡</div><h3>Fast & Reliable</h3><p>Quick troubleshooting and smooth fixes.</p></div>
+      <div class="why-card"><div class="icon-bounce">💻</div><h3>Laptop Experts</h3><p>Upgrades, repairs & performance tuning.</p></div>
+      <div class="why-card"><div class="icon-bounce">☁️</div><h3>Cloud Ready</h3><p>Azure, M365, security & migration.</p></div>
+      <div class="why-card"><div class="icon-bounce">🔁</div><h3>Automation</h3><p>Power Automate, n8n & workflows.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="section">
+  <div class="container">
+    <h2>What We Do</h2>
+    <p class="muted">Clear, practical IT services that keep your business running smoothly.</p>
+    <div class="cards">
+      <article class="card"><h3>Laptop Service</h3><p>OS setup, SSD/RAM upgrades, cleaning, tuning & troubleshooting.</p></article>
+      <article class="card"><h3>IT Support</h3><p>Remote & onsite issues, printers, apps, onboarding & fixes.</p></article>
+      <article class="card"><h3>Cloud & Azure</h3><p>Azure VMs, M365 setup, security, DNS & migrations.</p></article>
+      <article class="card"><h3>Automation</h3><p>Power Automate, n8n, Power Apps & workflow design.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="brands" class="section alt">
+  <div class="container">
+    <h2>Brands We Support</h2>
+    <p class="muted">We work with all major laptop & desktop brands.</p>
+    <div class="brand-grid" id="brandGrid">
+    <!-- JS will populate only actual uploaded logos -->
+    </div>
+  </div>
+</section>
+
+<section id="amc" class="section">
+  <div class="container">
+    <h2>Managed IT / AMC</h2>
+    <p class="muted">Reliable, always-available IT support for clinics, labs & offices.</p>
+    <div class="cards">
+      <article class="card"><h3>Why AMC</h3><ul class="checklist"><li>Priority response</li><li>Proactive maintenance</li><li>No breakdown surprises</li><li>Single contact for all IT</li><li>Monthly reports</li></ul></article>
+      <article class="card"><h3>What's Included</h3><ul class="checklist"><li>Performance optimization</li><li>Thermal cleaning</li><li>Network stability</li><li>Email & M365 support</li><li>Backup verification</li></ul></article>
+      <article class="card"><h3>Maintenance</h3><ul class="checklist"><li>Monthly/Quarterly visits</li><li>Remote & onsite support</li><li>Incident handling</li><li>Free estimations</li></ul></article>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact-section">
+  <div class="contact-container">
+    <div class="contact-left">
+      <h2>Let’s Talk</h2>
+      <p class="contact-lead">Tell us what you need — we’ll send a clear plan to fix, upgrade or modernize your IT.</p>
+      <div class="contact-details">
+        <div class="c-item"><span class="c-icon">📞</span><a href="tel:+919894094239">+91 98940 94239</a></div>
+        <div class="c-item"><span class="c-icon">📧</span><a href="mailto:rcubeit@yahoo.com">rcubeit@yahoo.com</a></div>
+        <div class="c-item"><span class="c-icon">📍</span>Chennai, Tamil Nadu, India</div>
+      </div>
+      <a class="whatsapp-btn" href="https://wa.me/919894094239">💬 Chat on WhatsApp</a>
+    </div>
+    <form class="contact-form" action="https://formsubmit.co/rcubeit@yahoo.com" method="POST">
+      <div class="form-row">
+        <label>Name<input type="text" name="name" required></label>
+        <label>Email<input type="email" name="email" required></label>
+      </div>
+      <div class="form-row">
+        <label>Phone<input type="tel" name="phone"></label>
+        <label>Company<input type="text" name="company"></label>
+      </div>
+      <label>Message<textarea name="message" rows="5" required></textarea></label>
+      <button type="submit" class="send-btn">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>© R-Cube IT — R-Cube IT Solutions</div>
+    <div class="muted">Repair · Restore · Reliability</div>
+  </div>
+</footer>
+
+<script>
+// populate brand grid with only actual uploaded logos
+const logos = [
+  "assets/logos_real/Acer.png",\n  "assets/logos_real/Apple.png",\n  "assets/logos_real/Asus-Logo.png",\n  "assets/logos_real/Brother_logo.svg.png",\n  "assets/logos_real/Dell_Logo.svg.png",\n  "assets/logos_real/HP_logo_2025.svg",\n  "assets/logos_real/lenova.png",\n  "assets/logos_real/samsung_logo_PNG8.png",\n  "assets/logos_real/surface.png",\n ];
+
+const grid = document.getElementById('brandGrid');
+logos.forEach(src=>{
+  const card = document.createElement('div');
+  card.className = 'brand-card';
+  const img = document.createElement('img');
+  img.src = src; img.alt = src; img.loading = 'lazy';
+  card.appendChild(img);
+  grid.appendChild(card);
+});
+</script>
+
+<link rel="stylesheet" href="styles.v3.css">
+</body>
+</html>

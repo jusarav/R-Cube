@@ -1,0 +1,14 @@
+const logoLight = "assets/branding/logo-light.png";
+const logoDark = "assets/branding/logo-dark.png";
+function applyTheme(dark){
+  document.body.classList.toggle('dark', dark);
+  const logo = document.getElementById('brand-logo');
+  if(logo) logo.src = dark ? logoDark : logoLight;
+  localStorage.setItem('rcube_theme_dark', dark ? '1' : '0');
+  const btn = document.getElementById('themeBtn'); if(btn) btn.innerText = dark ? 'Light' : 'Dark';
+}
+document.addEventListener('DOMContentLoaded', ()=>{
+  const saved = localStorage.getItem('rcube_theme_dark'); applyTheme(saved === '1');
+  const btn = document.getElementById('themeBtn'); if(btn) btn.addEventListener('click', ()=>{ applyTheme(!document.body.classList.contains('dark')); });
+});
+(function(){ const canvas=document.getElementById('hero-canvas'); if(!canvas) return; const renderer=new THREE.WebGLRenderer({canvas,antialias:true,alpha:true}); renderer.setPixelRatio(window.devicePixelRatio); const scene=new THREE.Scene(); const camera=new THREE.PerspectiveCamera(35,2,0.1,100); camera.position.set(0,1.2,4); const dl=new THREE.DirectionalLight(0xffffff,1); dl.position.set(5,10,7); scene.add(dl); scene.add(new THREE.AmbientLight(0xffffff,0.6)); const matBody=new THREE.MeshStandardMaterial({color:0x0b1220,metalness:0.25,roughness:0.4}); const matScreen=new THREE.MeshStandardMaterial({color:0x6f42c1,emissive:0x2d6bff,emissiveIntensity:0.4}); const base=new THREE.Mesh(new THREE.BoxGeometry(3.2,0.18,2),matBody); base.position.y=-0.5; const screen=new THREE.Mesh(new THREE.BoxGeometry(3.2,1.8,0.12),matScreen); screen.position.set(0,0.6,-0.9); screen.rotation.x=-0.35; const touchpad=new THREE.Mesh(new THREE.BoxGeometry(0.8,0.02,0.4),new THREE.MeshStandardMaterial({color:0x15202b})); touchpad.position.set(0,-0.55,-0.05); const group=new THREE.Group(); group.add(base); group.add(screen); group.add(touchpad); scene.add(group); const orbMat=new THREE.MeshStandardMaterial({color:0x6f42c1,emissive:0x2d6bff,emissiveIntensity:0.6}); for(let i=0;i<10;i++){ const s=0.06+Math.random()*0.12; const g=new THREE.SphereGeometry(s,16,16); const m=new THREE.Mesh(g,orbMat); m.position.set((Math.random()-0.5)*4,(Math.random()-0.2)*1.8,(Math.random()-0.5)*2); scene.add(m);} function resize(){ const w=canvas.offsetWidth||800; const h=canvas.offsetHeight||400; renderer.setSize(w,h,false); camera.aspect=w/h; camera.updateProjectionMatrix(); } window.addEventListener('resize',resize); resize(); let mouseX=0,mouseY=0; window.addEventListener('mousemove',(e)=>{ const r=canvas.getBoundingClientRect(); mouseX=(e.clientX-r.left)/r.width-0.5; mouseY=(e.clientY-r.top)/r.height-0.5; }); const clock=new THREE.Clock(); (function animate(){ const t=clock.getElapsedTime(); group.rotation.y += 0.006 + mouseX*0.02; group.rotation.x = -0.12 + mouseY*0.08; group.position.y = Math.sin(t*0.8)*0.06; renderer.render(scene,camera); requestAnimationFrame(animate); })(); })();
